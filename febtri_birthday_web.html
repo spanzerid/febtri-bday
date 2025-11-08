@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Febtri 🌷</title>
+  <style>
+    body {
+      background: linear-gradient(180deg, #fff9f5, #fdf4ea);
+      color: #5b4636;
+      font-family: 'Cormorant Garamond', serif;
+      text-align: center;
+      padding: 50px 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #8c5e3c;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto 1rem;
+      font-size: 1.1rem;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    .sparkle {
+      position: fixed;
+      width: 4px;
+      height: 4px;
+      background: #f5cda1;
+      border-radius: 50%;
+      animation: float 6s linear infinite;
+      z-index: 1;
+    }
+    @keyframes float {
+      0% {transform: translateY(0) scale(1); opacity: 1;}
+      100% {transform: translateY(-100vh) scale(0.2); opacity: 0;}
+    }
+    .player {
+      margin: 24px auto 8px;
+      max-width: 560px;
+      position: relative;
+      z-index: 2;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .note {font-size:0.9rem; opacity:0.85; margin-top:8px}
+    @media (max-width:600px){
+      h1{font-size:1.4rem}
+      p{font-size:1rem}
+    }
+  </style>
+</head>
+<body>
+  <h1>Untuk Febtri 💐</h1>
+  <p><em>8 Februari — tapi cahaya kamu nggak butuh tanggal untuk bersinar.</em></p>
+  <p>Hari ini bukan cuma soal ulang tahunmu,<br>
+  tapi tentang semua hal kecil yang kamu bawa ke dunia —<br>
+  cara kamu bikin suasana jadi lebih hidup,<br>
+  dan bagaimana tawa kamu terasa bahkan saat kamu nggak di sana.</p>
+  <p>Semoga tahun ini kamu dapat banyak hal baru yang kamu impikan,<br>
+  dan juga hal-hal lama yang tetap kamu jaga — seperti ketulusan,<br>
+  dan cara kamu tetap jadi diri sendiri. 🌸</p>
+  <p>Terima kasih sudah jadi orang yang hangat dan tulus.<br>
+  Selamat ulang tahun, Febtri 💫</p>
+
+  <!-- Embedded YouTube: ENHYPEN - Polaroid Love (recommended birthday vibe) -->
+  <div class="player">
+    <iframe id="ytplayer" src="https://www.youtube.com/embed/vRdZVDWs3BI" title="ENHYPEN - Polaroid Love" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="note">Diputar via YouTube — tekan play untuk dengarkan. Jika ingin, ganti dengan lagu lain (YouTube / Spotify embed).</div>
+  </div>
+
+  <div class="footer">— Oneall</div>
+
+  <script>
+    // Efek bintang lembut
+    const sparkleCount = 40;
+    for (let i = 0; i < sparkleCount; i++) {
+      const s = document.createElement('div');
+      s.className = 'sparkle';
+      s.style.left = Math.random() * 100 + 'vw';
+      s.style.animationDuration = 5 + Math.random() * 6 + 's';
+      s.style.animationDelay = Math.random() * 5 + 's';
+      document.body.appendChild(s);
+    }
+  </script>
+</body>
+</html>
